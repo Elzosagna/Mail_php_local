@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="formu" method="POST">
+		<label>Login : </label>	
+		<input type = "text" name = 'login'><br>
+		<span id="ordre"></span><br>
+		<label>mot de passe : </label>
+		<input type = "password" name = 'passe_1'><br>
+		<span id="ordre"></span><br>
+		<label> Confirmer mot de passe : </label>	
+		<input type = "password" name = 'passe_2'><br>
+		<span id="ordre"></span><br>
+		<input type = 'button' onclick="Confirmer()" value="inscription">
+	</form>
+	
+	<script type="text/javascript">
+		function Confirmer()
+		{
+				var x = document.getElementById("ordre").innerHTML='Renseignez ce champ';
+			/*
+			//variable
+			var identifiant = document.forms['formu']['login'];
+			var passe1 = document.forms['formu']['passe_1'];
+			var passe2 = document.forms['formu']['passe_2'];
+			var x = document.getElementById("ordre").innerHTML='Renseignez ce champ';
+
+			//controle de saisie coté client		
+			var alerter="Renseignez les champs : \n";
+    		if (identifiant.value==""){alerter+='Login\n';}
+    		if (passe1.value==""){
+
+    			alerter+='Mot de passe\n';
+    			
+    		}
+    		if (passe2.value==""){alerter+='Confirmer mot de passe\n';}
+    		if (identifiant.value==""||passe1.value==""||passe2.value=="")
+    		{
+    		//	alert(alerter);
+    		}
+    		if(passe2.value!=passe1.value)
+			{
+			//	alert('Les deux mots de passe ne correspondent pas');
+			}
+				else if(identifiant.value && passe1.value && passe2.value !="")
+			{
+			//	alert('Bienvenue');
+			}
+			*/
+		}
+		
+	</script>
+
+	
+</body>
+</html>

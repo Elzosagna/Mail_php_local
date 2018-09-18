@@ -1,0 +1,87 @@
+body
+{
+	background-image: url(../img/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+img
+{
+	width: 100%;
+	height: auto;
+}
+
+.container-contact1 
+{
+ 	float: right;
+  	width: 700px;
+  	background: #fff;
+  	background-size: contain;
+  	border-radius: 10px;
+  	padding: 36px 160px;
+}
+
+
+input[type="checkbox"]
+{
+	float: right;
+}
+
+input.chek
+{
+	position: relative;
+	top: 7px;
+}
+
+.contact1-form {
+  width: 390px;
+}
+
+.contact1-form-title {
+  display: block;
+  font-family: Montserrat-ExtraBold;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+input.input1 {
+  height: 50px;
+  width: 400px;
+  border-radius: 25px;
+  padding: 0 30px;
+}
+
+textarea.input1 {
+  min-height: 150px;
+  width: 400px;
+  border-radius: 25px;
+  padding: 12px 30px;
+}
+
+.wrap-input1 {
+  position: relative;
+  width: 159px;
+  margin-bottom: 20px;
+}
+
+.container-contact1-form-btn 
+{
+ 	display: flex;
+  	justify-content: center;
+}
+
+.contact1-form-btn 
+{
+
+  	min-width: 160px;
+  	height: 50px;
+  	border-radius: 25px;
+  	background: #57b846;
+  	font-family: Montserrat-Bold;
+  	font-size: 15px;
+  	line-height: 1.5;
+  	color: #fff;
+}

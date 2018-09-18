@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<script type="text/javascript">
+		function validchamp()
+		{
+			var a=document.getElementById('nom');
+    		var b=document.getElementById('prenom');
+    		var c=document.getElementById('email');
+    		var d=document.getElementById('message');
+    		var alerter="Renseignez les champs\n";
+
+    			if (a.value==""){alerter+='Nom\n';}
+    			if (b.value==""){alerter+='Prénom\n';}
+    			if (c.value==""){alerter+='Email\n';}
+    			if (d.value==""){alerter+='Message\n';}
+    			if (a.value==""||b.value==""||c.value==""||d.value=="")
+    			{
+    				alert(alerter);
+    			}
+    			else
+    			{
+    				alert("formulaire envoyer");
+    			}
+    		}
+	</script>
+
+<div class="contact1">
+		<div class="container-contact1">
+
+			<form class="contact1-form validate-form" action="traimt.php" name="formu" method="POST" onsubmit="return validchamp()">
+				<span class="contact1-form-title">
+					RENSEIGNER LE FORMULAIRE
+				</span>
+
+				<div class="wrap-input1 validate-input">
+					<label> Civilité </label><br>
+					<label> Monsieur </label>
+					<input class="chek" type="checkbox" name="name"><br>
+					<label> Madame </label>
+					<input class="chek" type="checkbox" name="name"><br>
+					<label> Medoiselle </label>
+					<input class="chek" type="checkbox" name="name">
+
+
+					<label> Quel est votre plat préféré </label><br>
+					<label> Yassa </label>
+					<input class="chek" type="radio" name="name"><br>
+					<label> Thiébou Jén </label>
+					<input class="chek" type="radio" name="name"><br>
+					<label> Lakh </label>
+					<input class="chek" type="radio" name="name">
+
+
+
+					<label>Quel est votre pays d'Origine</label>
+					<select>
+						<option>senegal</option>
+						<option>France</option>
+						<option>Espagna</option>
+					</select>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input class="input1" type="text" name="nom" id="nom"  id="name" placeholder="Nom" >
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input class="input1" type="text" name="prenom" id="prenom" placeholder="Prénom" >
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input class="input1" type="email" name="email" id="email" placeholder="Email ex: exemple@gmail.com" >
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<textarea class="input1" name="texto" id="message" placeholder="Message" ></textarea>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>Envoyer</span>
+					</button>
+					<button class="contact1-form-btn">
+						<span>Annuler</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
